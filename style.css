@@ -24,8 +24,9 @@ ul {
 }
 
 header {
-    width: 100%;
-    text-align: right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 header ul li,
@@ -33,11 +34,16 @@ header ul svg,
 header ul img {
     display: inline-block;
     padding: 10px;
+    align-content: center;
+    align-items: center;
+    font-size: small;
 }
 
 header ul {
+   display: flex;
     padding-left: 0%;
     margin: 0px 0px 0px 0px;
+    align-items: center;
 }
 
 footer {
@@ -71,7 +77,10 @@ footer ul.mec {
 }
 
 main {
-    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 35%;
     left: 52%;
@@ -79,16 +88,21 @@ main {
 }
 
 .barra {
-
-    border: 1px solid rgb(19, 19, 19);
+  display: flex;
+    border: 1px solid rgb(180, 177, 177);
     border-radius: 50px;
     border: 80%;
+    height: 45px;
+  align-items: center;
+
 }
 
 .barra input {
     width: 500px;
     border: 0;
     padding: 0px 0px 2px 0px;
+    outline:none;
+    border:none;
 }
 
 .tubo {
@@ -98,5 +112,21 @@ main {
 
 .tubo button {
     border-radius: 5px;
-    background-color: #b8c1e3;
+    border: none;
+    background-color: #f3f3f3;
+    height: 35px;
+    width: 135px;
+   margin-left: 10px;
+   margin-right: 10px;
 }
+
+.tubo{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.boton{
+    padding: 0px 7px 0px 7px;
+}
+
